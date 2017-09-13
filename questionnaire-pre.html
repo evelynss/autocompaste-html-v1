@@ -35,59 +35,199 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h1>Pre-Experiment Questionnaire</h1>
                     <hr>
-                    <p>This part of the interface collects whatever pre-experiment information. Please come up with a basic questionnaire to help you to gather participant information. The purpose of this questionnaire is to report the participant data and convince readers that you have picked an appropriate target user group and the result has certain generalizability.</p>
 
                     <p>Please put all information needed for participant: <span class="js-pid pid"></span></p>
+					<br>
 
                     <form id="pre-expt-form">
-                        <div class="form-group">
-                            <label for="q1">Question 1 - Text</label>
+					   <div class="form-group">
+                            <label for="q1">Question 1 - Please fill in your name</label>
                             <input type="text" class="form-control" id="q1" name="q1" placeholder="Enter answer">
                         </div>
+										
                         <div class="form-group">
-                            <label for="q2">Question 2 - Radio</label>
+                            <label for="q2">Question 2 - Tell us about your age range</label>
+                               <div class="radio">
+                              <label>
+                                <input type="radio" name="q2" id="optionsRadios1" value="18-29">
+                                older then 18 but younger than 29
+                              </label>
+                            </div>
+							<div class="radio">
+                              <label>
+                                <input type="radio" name="q2" id="optionsRadios2" value="30-39">
+                                older then 30 but younger than 39
+                              </label>
+                            </div>
+							<div class="radio">
+                              <label>
+                                <input type="radio" name="q2" id="optionsRadios3" value="40-49">
+                                older then 40 but younger than 49
+                              </label>
+                            </div>
+							<div class="radio">
+                              <label>
+                                <input type="radio" name="q2" id="optionsRadios4" value="50-59">
+                                older then 50 but younger than 59
+                              </label>
+                            </div>							
+							<div class="radio">
+                              <label>
+                                <input type="radio" name="q2" id="optionsRadios5" value="60UP">
+                                older then 60
+                              </label>
+                            </div>								
+
+                        </div>
+						
+						
+						 <div class="form-group">
+                            <label for="q3">Question 3 - Gender</label>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="q2" id="optionsRadios1" value="radio1">
-                                Radio response 1
+                                <input type="radio" name="q3" id="optionsRadios6" value="M">
+                                Male
                               </label>
                             </div>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="q2" id="optionsRadios2" value="radio2">
-                                Radio response 2
+                                <input type="radio" name="q3" id="optionsRadios7" value="F">
+                                Female
+                              </label>
+                            </div>
+							 <div class="radio">
+                              <label>
+                                <input type="radio" name="q3" id="optionsRadios8" value="NA">
+									Unknown
                               </label>
                             </div>
                         </div>
+						
                         <div class="form-group">
-                            <label for="q3">Question 3 - Checkbox</label>
+                            <label for="q4">Question 4 - Highest Education Certification Obtained</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q4" id="optionsRadios9" value="BeforePoly">
+                                Lower than Polytechnic
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q4" id="optionsRadios10" value="Poly">
+                                Polytechnic
+                              </label>
+                            </div>
+							 <div class="radio">
+                              <label>
+                                <input type="radio" name="q4" id="optionsRadios11" value="University">
+                                University Degree
+                              </label>
+                            </div>
+							 <div class="radio">
+                              <label>
+                                <input type="radio" name="q4" id="optionsRadios12" value="UniUp">
+                                Higher than Degree
+                              </label>
+                            </div>
+                        </div>
+						
+					   <div class="form-group">
+                            <label for="q5">Question 5 - Please fill in your occupation</label>
+                            <input type="text" class="form-control" id="q5" name="q5" placeholder="Enter occupation">
+                        </div>
+						
+						
+                        <div class="form-group">
+                            <label for="q6">Question 6 - Computer Usage (hours per day, on average) </label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios13" value="0">
+                                No Usage at all
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios14" value="0-2">
+                                Less than 2 hours per day
+                              </label>
+                            </div>
+							 <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios15" value="2-8">
+                                More than 2 hours but less than 8 hours per day
+                              </label>
+                            </div>
+							 <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios16" value="8UP">
+                                More than 8 hours per day
+                              </label>
+                            </div>
+                        </div>
+
+						<div class="form-group">
+                            <label for="q7">Question 7 - Usage of traditional copy paste technique (times per day, on average) </label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q7" id="optionsRadios17" value="0">
+                                No Usage at all
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q7" id="optionsRadios18" value="0-10">
+                                Less than 10 times per day
+                              </label>
+                            </div>
+							 <div class="radio">
+                              <label>
+                                <input type="radio" name="q7" id="optionsRadios19" value="10UP">
+                                More than 10 times per day
+                              </label>
+                            </div>
+                        </div>						
+						
+                        <div class="form-group">
+                            <label for="q8">Question 8 - Which type of message do you copy paste using ctrl+ C / ctrl+ V technique?</label>
                             <div class="checkbox">
                               <label>
-                                <input type="checkbox" name="q3" value="checkbox1">
-                                Checkbox response 1
+                                <input type="checkbox" name="q8" value="Phrase">
+                                Phrase
                               </label>
                             </div>
                             <div class="checkbox">
                               <label>
-                                <input type="checkbox" name="q3" value="checkbox2">
-                                Checkbox response 2
+                                <input type="checkbox" name="q8" value="Sentence">
+                                Sentence
                               </label>
                             </div>
-                        </div>
+							<div class="checkbox">
+                              <label>
+                                <input type="checkbox" name="q8" value="Paragraph">
+                                Paragraph
+                              </label>
+                            </div>
+							
+                        </div>						
+
                         <div class="form-group">
-                            <label for="q4">Question 4 - Select Options</label>
-                            <select class="form-control" name="q4">
-                                <option value="option1">Option response 1</option>
-                                <option value="option2">Option response 2</option>
-                                <option value="option3">Option response 3</option>
-                                <option value="option4">Option response 4</option>
-                                <option value="option1">Option response 5</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="q5">Question 5 - Textarea</label>
-                            <textarea class="form-control" id="q5" name="q5" placeholder="Enter response"></textarea>
-                        </div>
+                            <label for="q9">Question 9 - Which type of task mode are you in while doing ctrl+ C / ctrl+ V technique?</label>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" name="q9" value="SingleTask">
+                                Single Task
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" name="q9" value="MultiTask">
+                                Multi-Task
+                              </label>
+                            </div>
+							
+                        </div>	
+						
+						
                         <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                     </form>
                 </div>
